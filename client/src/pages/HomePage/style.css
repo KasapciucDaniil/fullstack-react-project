@@ -1,0 +1,84 @@
+section {
+  padding: 100px 0;
+}
+
+.section-home img {
+  max-width: 100%;
+  height: auto;
+}
+
+.section-home {
+  background: url(../AuthPage/world_map.png) center no-repeat;
+  background-size: cover;
+  color: gray;
+  background-color: rgb( 248, 229, 48 );
+}
+
+.section-home p {
+  font-weight: 300;
+  color: #484848;
+  text-transform: uppercase;
+}
+
+.section-home .nav-pills {
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.section-home .nav-pills .nav-link {
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 14px 30px;
+  color: #484848;
+}
+
+.section-home .nav-pills .nav-item .nav-link.active {
+  background-color: #302b2b;
+  color: #fff;
+  box-shadow: 0 12px 16px rgba(0,0,0, .35);
+}
+
+.btn-black {
+  background: black;
+}
+
+.section-home .btn-shadow {
+  box-shadow: 0 10px 0 #484848;
+  border-radius: 10px;
+  padding: 10px 25px;
+  transition: all .5s;
+}
+ 
+.section-home .btn-shadow:hover {
+  box-shadow: 0 5px 0 #484848;
+  color: rgba(255, 255, 255, 0.884);
+}
+
+.img-digital {
+  height: 220px;
+}
+
+.img-like {
+  height: 390px;
+}
+
+@media only screen and (max-width : 992px) {
+  .section-home {
+    padding: 50px 10px;
+  }
+}
+
+@media only screen and (max-width : 480px) {
+  .section-home {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  .section-home .nav-pills .nav-item {
+    padding: 8px 16px;
+    width: 100%;
+  }
+
+}
+
