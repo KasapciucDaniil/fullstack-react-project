@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useContext } from 'react'
 import {NavLink} from 'react-router-dom'
 import './style.css'
-import video from '../../city2.mp4'  
+// import video from '../../city2.mp4'  
 
 import { useHttp } from '../../hooks/http.hook'
 import { useMessage } from '../../hooks/message.hook'
@@ -35,7 +35,7 @@ export const AuthPage = () => {
   return (
     <div>
       <div>
-      <video src={video} autoPlay loop muted className="video">
+      <video  autoPlay loop muted className="video">
       </video>
       </div>
       <div className="intro__content">

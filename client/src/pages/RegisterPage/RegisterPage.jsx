@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import './style.css'
-import video from '../../city4.mp4'  
+// import video from '../../city4.mp4'  
 import { NavLink, useHistory } from 'react-router-dom'
 
 import { useHttp } from '../../hooks/http.hook'
@@ -38,7 +38,7 @@ export const RegisterPage = () => {
   return (
     <div>
       <div>
-      <video src={video} autoPlay loop muted className="video">
+      <video autoPlay loop muted className="video">
       </video>
       </div>
       <div className="intro__content">
