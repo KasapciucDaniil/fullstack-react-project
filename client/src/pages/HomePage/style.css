@@ -2,7 +2,7 @@ section {
   padding: 100px 0;
 }
 
-.section-home img {
+section img {
   max-width: 100%;
   height: auto;
 }
@@ -82,3 +82,69 @@ section {
 
 }
 
+
+/* ==============================section-dream============================== */
+
+.section-dream {
+  background-color: #0c0c0c;
+}
+
+
+.section-dream .progress-item {
+  padding-top: 50px;
+  padding-bottom: 10px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.section-dream .progress-item:hover{
+  background-color: rgba(255, 255, 255, 0.11);
+  border-radius: 10px;
+}
+
+.section-dream p {
+  margin-top: 3rem;
+  color: #a5a5a5;
+  text-align: center;
+}
+
+.section-dream h2 {
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.section-dream .btn {
+  color: #0c0c0c;
+}
+
+.btn-yellow {
+  background-color: #f8e530;
+  color: #0c0c0c;
+}
+
+.section-dream .btn-shadow {
+  background-color: #f8e430de;
+  box-shadow: 0 10px 0 hsla(54, 93%, 58%, 0.61);
+  border-radius: 10px;
+  padding: 10px 25px;
+  transition: all .5s;
+}
+
+.section-dream .btn-shadow:hover {
+  box-shadow: 0 7px 0 hsla(54, 93%, 58%, 0.61);
+  color:  #202020ef;
+}
+
+.img-item {
+  border-radius: 10px;
+  border: 3.5px solid #fff;
+}
+
+
+@media only screen and (max-width : 992px) {
+  .section-dream {
+    padding: 50px 10px;
+  }
+}
