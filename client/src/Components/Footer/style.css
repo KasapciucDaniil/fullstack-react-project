@@ -1,0 +1,96 @@
+.section-footer {
+  background: url(../../pages/AuthPage/world_map.png) center no-repeat;
+  background-size: cover;
+  background-color: #0c0c0c;
+  padding: 100px 0;
+}
+
+.section-footer h5 {
+  font-size: 25px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.section-footer ul {
+  list-style: none;
+  padding-left: 10px;
+}
+
+.section-footer ul a{
+  font-size: 17px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #fff;
+}
+
+.section-footer ul a:hover{
+  color: #f8e530;
+}
+
+.footer-images img {
+  border-radius: 10px;
+  border: 3px solid white;
+  margin-bottom: 20px;
+}
+
+.section-footer .progress-item {
+  padding-top: 20px;
+  padding-bottom: 5px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.section-footer .progress-item:hover{
+  background-color: rgba(255, 255, 255, 0.11);
+  border-radius: 10px;
+}
+
+.copyright {
+  background-color: #f8e530;
+  padding: 50px 0;
+  font-family: sans-serif;
+}
+
+.copyright a,
+.copyright span {
+  color: #171717;
+  font-size: 18px;
+  font-weight: 600;
+  position: relative;
+}
+
+.copyright .nav {
+  justify-content: center;
+}
+
+.copyright li a::after,
+.copyright li span::after {
+  content: '\00B7';
+  position: absolute;
+  right: -3px;
+}
+
+.copyright li:last-child a::after,
+.copyright li:last-child span::after {
+  content: '';
+}
+
+.copyright a:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width : 992px) {
+  .section-footer {
+    padding: 50px 0;
+  } 
+
+  .copyright{
+    padding: 20px 0;
+  } 
+}
+
+@media only screen and (max-width : 552px) {
+  .section-footer h5 {
+    font-size: 22.5px;
+  }
+}

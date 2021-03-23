@@ -1,0 +1,197 @@
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.register-card {
+  width: 30rem;
+  margin: auto;
+  height: 25.2rem;
+  background: url(../AuthPage/world_map.png) center no-repeat;
+  background-color: white;
+  background-size: cover;
+  border-radius: 14px;
+}
+
+.card-header {
+  margin-top: 5px;
+}
+
+.register-header {
+  display: flex;
+}
+
+.section-register h2 {
+  font-size: 35px;
+  color: #666;
+  font-weight: 500;
+  text-align: center;
+  font-family: auto;
+  cursor: pointer;
+  margin-left: 4rem;
+}
+
+.section-register h2::after {
+  content: '';
+  display: block;
+  width: 100%;
+  background-color: #666;
+  height: 1px;
+  transform: scale(0);
+  transition: all .5s;
+}
+
+.section-register h2:hover::after {
+  transform: scale(1); 
+}
+
+.section-register form {
+  margin-top: 10px;
+}
+
+.section-register .btn-violet {
+  height: 45px;
+  background-color: #4b2d7f;
+  border-radius: 14px;
+  padding-right: 35px;
+  padding-left: 35px;
+}
+
+.btn-violet.btn-violet-shadow {
+  box-shadow: 0 7px 0px #a57ee9;
+  transition: all .5s;
+}
+
+.btn-violet.btn-violet-shadow:hover {
+  background-color: #3a2362;
+  box-shadow:  0 5px 0px #a57ee9;
+  color: white;
+}
+
+.section-auth button {
+  margin-right: 15px;
+}
+
+.btn {
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.main-header-buttons .btn {
+  height: 55px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-top: -5px;
+  margin-right: 20px;
+  box-shadow: 0 4px 16px rgba(0,0,0, .35);
+  transition: all .5s;
+}
+
+.main-header-buttons .btn:hover {
+  color: #fff;
+  opacity: 1;
+  box-shadow: 0 6px 20px rgba(0,0,0, .65);
+}
+
+.btn-green {
+  background-color:#f42267;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+.btn-violet {
+  background-color: #69328e;
+}
+
+.section-register label {
+  text-transform: uppercase;
+  color: black;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.section-register .form-control {
+  background-color: rgba(255,255,255, .35);
+  color: black;
+  font-weight: 500;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.section-register .form-control::placeholder {
+  /* color: rgba(255, 255, 255, 0.911); */
+  font-weight: 500;
+  font-weight: 300;
+}
+
+@media only screen and (max-width : 520px) {
+  .section-register h2  { 
+    font-size: 30px;
+  }
+
+  .section-register .btn-violet {
+    height: 38px; 
+  }
+
+  .card-wrapper {
+    padding: 0 7px;
+  }
+
+}
+
+@media only screen and (max-width : 380px) {
+  .section-register h2 {
+    margin-left: 1.3rem;
+    font-size: 27px;
+  }
+}
+
+
+
+@media only screen and (max-width : 353px) {
+
+  .main-header-buttons .btn {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 50px;
+    
+  } 
+
+  .main-header-buttons .btn:last-child {
+    margin-top: 0;
+  }
+
+  .register-card {
+    width: 30rem;
+    margin: auto;
+    height: 24.6rem;
+  }
+
+}
+
+@media only screen and (max-width : 328px) {
+  .auth-card {
+    height: 25.5rem;
+  }
+
+  .register-header {
+    margin: auto;
+  }
+
+  .section-register .btn-violet {
+    height: 33px;
+    margin-bottom: 5px;
+  }
+
+  .section-register h2 {
+    margin-left: 1rem;
+    font-size: 24px;
+  }
+}
+

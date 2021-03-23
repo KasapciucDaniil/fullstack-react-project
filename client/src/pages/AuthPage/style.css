@@ -1,0 +1,213 @@
+.video {
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  top: 50%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+body {
+  margin: 0;
+  font-family: Tahoma, sans-serif;
+}
+
+.intro {
+  max-height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.intro:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, .8);
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.intro__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.intro__title {
+  margin: 0;
+
+  font-size: 45px;
+  color: #fff;
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.auth-card {
+  width: 30rem;
+  margin: auto;
+  height: 21.5rem;
+  background: url(./world_map.png) center no-repeat;
+  background-color: white;
+  background-size: cover;
+  border-radius: 14px;
+}
+
+.card-header {
+  margin-top: 5px;
+}
+
+.section-auth h2 {
+  font-size: 35px;
+  font-weight: 500;
+  text-align: center;
+  font-family: auto;
+  cursor: pointer;
+}
+
+.section-auth h2::after {
+  content: '';
+  display: block;
+  width: 100%;
+  background-color: black;
+  height: 1px;
+  transform: scale(0);
+  transition: all .5s;
+}
+
+.section-auth h2:hover::after {
+  transform: scale(0.3); 
+}
+
+.section-auth form {
+  margin-top: 5px;
+}
+
+.section-auth button {
+  margin-right: 15px;
+}
+
+.btn {
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.btn a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.main-header-buttons .btn {
+  height: 55px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-top: -5px;
+  margin-right: 20px;
+  box-shadow: 0 4px 16px rgba(0,0,0, .35);
+  transition: all .5s;
+}
+
+.main-header-buttons .btn:hover {
+  color: #fff;
+  opacity: 1;
+  box-shadow: 0 6px 20px rgba(0,0,0, .65);
+}
+
+.btn-pink {
+  background-color: #f42267;
+}
+
+.btn-violet {
+  background-color: #69328e;
+}
+
+.section-auth label {
+  text-transform: uppercase;
+  color: black;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.section-auth .form-control {
+  background-color: rgba(255,255,255, .35);
+  color: black;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.section-auth .form-control::placeholder {
+  color: gray;
+  font-weight: 500;
+  font-weight: 300;
+}
+
+.auth-validation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.text-validation {
+  color: rgb(255, 0, 0);
+}
+
+@media only screen and (max-width : 354px) {
+
+  .main-header-buttons .btn {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 50px;
+    
+  } 
+
+  .main-header-buttons .btn:last-child {
+    margin-top: 0;
+  }
+
+  .auth-card {
+    width: 30rem;
+    margin: auto;
+    height: 25rem;
+  }
+
+}
+
+@media only screen and (max-width : 520px) {
+  .section-auth h2  { 
+    font-size: 33px;
+  }
+
+  .card-wrapper {
+    padding: 0 10px;
+  }
+
+}
+
+@media only screen and (max-width : 328px) {
+  .auth-card {
+    height: 25.5rem;
+    margin-top: 40px;
+  }
+}

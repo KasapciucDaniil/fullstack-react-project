@@ -1,0 +1,140 @@
+.section-user {
+  background: url(../AuthPage/world_map.png) center no-repeat;
+  background-size: cover;
+  color: #1d1d1d;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.section-user h4 {
+  font-weight: 600;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.section-user h5 {
+  font-size: 27px;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+
+.section-user img {
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+.section-user .nav-pills {
+  margin-bottom: 20px;
+}
+
+.section-user .nav-pills .nav-link {
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 14px 30px;
+  color: #484848;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.section-user .nav-pills .nav-item .nav-link.active {
+  background-color: #f42267;
+  color: white;
+  box-shadow: 0 4px 16px rgba(0,0,0.35);
+}
+
+.section-user.btn {
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.logout-btn {
+  text-align: end;
+}
+
+.section-user .btn-violet {
+  height: 45px;
+  background-color: #4b2d7f;
+  border-radius: 14px;
+  padding-right: 35px;
+  padding-left: 35px;
+}
+
+.btn-violet.btn-shadow {
+  box-shadow: 0 7px 0px #a57ee9;
+  transition: all .5s;
+}
+
+.btn-violet.btn-shadow:hover {
+  background-color: #3a2362;
+  box-shadow:  0 5px 0px #a57ee9;
+  color: white;
+}
+
+.section-user.btn-pink {
+  background-color: #f42267;
+}
+
+.section-user .btn-shadow {
+  box-shadow: 0 10px 0 #ff5990;
+  border-radius: 10px;
+  padding: 10px 25px;
+  transition: all .5s;
+}
+
+.section-user .btn-shadow:hover {
+  box-shadow: 0 6px 0 #ff5990;
+  background-color: #da1757;
+  border-radius: 10px;
+  padding: 10px 25px;
+  transition: all .5s;
+  color: white;
+}
+
+.watch-tab-text {
+  font-weight: 600;
+}
+
+@media only screen and (max-width : 992px) { 
+  .section-user {
+    padding: 35px;
+  }
+}
+
+@media only screen and (max-width : 524px) { 
+  .section-user .nav-pills .nav-item {
+    width: 100%;
+    display: block;
+  }  
+
+  .section-user.btn-shadow {
+    box-shadow: 0 5px 0 #ff5990;
+    border-radius: 10px;
+    padding: 10px 15px;
+    transition: all .5s;
+  }
+}
+
+@media only screen and (max-width : 480px) {
+
+  .section-user {
+    padding: 30px;
+  }
+  
+  .section-user .nav-pills .nav-link {
+    padding: 8px 16px;
+  }  
+
+  .section-user .nav-pills .nav-item {
+    width: 100%;
+  }  
+}
+
+@media only screen and (max-width : 380px) {
+   .section-user{
+     padding: 25px;
+   }
+}

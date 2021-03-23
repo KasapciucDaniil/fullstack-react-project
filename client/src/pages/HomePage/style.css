@@ -1,0 +1,476 @@
+section {
+  padding: 100px 0;
+}
+
+section img {
+  max-width: 100%;
+  height: auto;
+}
+
+.section-home {
+  background: url(../AuthPage/world_map.png) center no-repeat;
+  background-size: cover;
+  color: gray;
+  background-color: rgb( 248, 229, 48 );
+  font-family: 'Montserrat', sans-serif;
+}
+
+.section-home p {
+  font-weight: 300;
+  color: #484848;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.section-home .nav-pills {
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.section-home .nav-pills .nav-link {
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 14px 30px;
+  color: #484848;
+}
+
+.section-home .nav-pills .nav-item .nav-link.active {
+  background-color: #302b2b;
+  color: #fff;
+  box-shadow: 0 12px 16px rgba(0,0,0, .35);
+}
+
+.btn-black {
+  background: black;
+}
+
+.section-home .btn-shadow {
+  box-shadow: 0 10px 0 #484848;
+  border-radius: 10px;
+  padding: 10px 25px;
+  transition: all .5s;
+}
+ 
+.section-home .btn-shadow:hover {
+  box-shadow: 0 5px 0 #484848;
+  color: rgba(255, 255, 255, 0.884);
+}
+
+.img-digital {
+  height: 220px;
+}
+
+.img-like {
+  height: 390px;
+}
+
+@media only screen and (max-width : 992px) {
+  .section-home {
+    padding: 50px 10px;
+  }
+}
+
+@media only screen and (max-width : 480px) {
+  .section-home {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  .section-home .nav-pills .nav-item {
+    padding: 8px 16px;
+    width: 100%;
+  }
+
+}
+
+
+/* ==============================section-dream============================== */
+
+.section-dream {
+  background-color: #0c0c0c;
+}
+
+
+.section-dream .progress-item {
+  padding-top: 50px;
+  padding-bottom: 10px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.section-dream .progress-item:hover{
+  background-color: rgba(255, 255, 255, 0.11);
+  border-radius: 10px;
+}
+
+.section-dream p {
+  margin-top: 3rem;
+  font-size: 19px;
+  color: #a5a5a5;
+  text-align: center;
+}
+
+.section-dream h2 {
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.section-dream .btn {
+  color: #0c0c0c;
+}
+
+.btn-yellow {
+  background-color: #f8e530;
+  color: #0c0c0c;
+}
+
+.section-dream .btn-shadow {
+  background-color: #f8e430de;
+  box-shadow: 0 10px 0 hsla(54, 93%, 58%, 0.61);
+  border-radius: 10px;
+  padding: 10px 25px;
+  transition: all .5s;
+}
+
+.section-dream .btn-shadow:hover {
+  box-shadow: 0 7px 0 hsla(54, 93%, 58%, 0.61);
+  color:  #202020ef;
+}
+
+.img-item {
+  border-radius: 10px;
+  border: 3.5px solid #fff;
+}
+
+
+@media only screen and (max-width : 992px) {
+  .section-dream {
+    padding: 50px 10px;
+  }
+}
+
+
+/* ===============================section-work============================== */
+
+.section-work {
+  background-color: rgb( 248, 229, 48 );
+}
+
+.work-text {
+  margin-top: 30px;
+  margin-bottom: 25px;
+  font-size: 18px;
+  color: #0c0c0c;
+}
+
+.gallery img {
+  transition: all .5s;
+  border-radius: 10px;
+}
+
+.section-dream.btn-black {
+  background: black;
+}
+
+.section-work .btn-shadow {
+  box-shadow: 0 10px 0 #484848;
+  border-radius: 10px;
+  padding: 10px 25px;
+  transition: all .5s;
+  margin-top: 30px;
+}
+ 
+.section-work .btn-shadow:hover {
+  box-shadow: 0 5px 0 #484848;
+  color: rgba(255, 255, 255, 0.884);
+}
+
+
+/* ==========================section-branding============================ */
+
+.section-branding {
+  background-color: #030303;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* =============================section-review=============================== */
+
+.section-review {
+  background-color: #252525;
+  color: #fff;
+}
+
+.section-review img {
+  transition: all .5s;
+}
+
+.human-img {
+  border-radius: 50px;
+  border: 3px solid white;
+  max-height: 90px;
+}
+
+.section-dream p {
+  margin-top: 3rem;
+  font-size: 19px;
+  color: #a5a5a5;
+  text-align: center;
+}
+
+.section-review .progress-item {
+  padding-top: 50px;
+  padding-bottom: 10px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.section-review .progress-item:hover{
+  background-color: rgba(255, 255, 255, 0.11);
+  border-radius: 10px;
+}
+
+.section-review .btn {
+  color: #0c0c0c;
+}
+
+.btn-yellow {
+  background-color: #f8e530;
+  color: #0c0c0c;
+}
+
+.section-review .btn-shadow {
+  background-color: #f8e430de;
+  box-shadow: 0 10px 0 hsla(54, 93%, 58%, 0.61);
+  border-radius: 10px;
+  padding: 10px 25px;
+  transition: all .5s;
+}
+
+.section-review .btn-shadow:hover {
+  box-shadow: 0 7px 0 hsla(54, 93%, 58%, 0.61);
+  color:  #202020ef;
+}
+
+.section-review .card-body {
+  display: flex;
+}
+
+.section-review p {
+  font-size: 19px;
+  margin-top: 20px;
+}
+
+.card-figure {
+  width: 100%;
+  height: auto;
+}
+
+.card-content {
+  margin-left: 27px;
+}
+
+.star {
+  max-width: 100px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.section-review .card p {
+  color: #959595;
+  font-size: 17px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.star-quote {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.section-review i {
+  margin-right: 20px;
+  font-size: 23px;
+  color: #f8e530;
+}
+
+
+/* ================================section-get================================= */
+
+.section-form {
+  background: url(../AuthPage/world_map.png) center no-repeat;
+  background-size: cover;
+  color: #000;
+  background-color: rgb( 248, 229, 48 );
+}
+
+.section-form p {
+  font-size: 18px;
+}
+
+.work-text {
+  margin-top: 30px;
+  margin-bottom: 25px;
+  color: #0c0c0c;
+}
+
+.form-dots {
+  font-size: 12px !important;
+}
+
+.section-from h4 {
+  font-size: 19px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.section-form form {
+  margin-top: 50px;
+}
+
+.section-form .form-control {
+  height: 51px;
+  background-color: #000000;
+  color: #e4c3c3;
+  border-radius: 30px;
+  border: 0;
+  font-family: fantasy;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-bottom: 20px;
+}
+
+.section-form .form-control::placeholder {
+  color: #a3a3a3;
+  font-family: fantasy;
+  text-transform: uppercase;
+}
+
+.section-form .form-control:focus {
+  box-shadow: 0 0 0 .6rem rgba(255,255,255, .25);
+}
+
+.last-from {
+  padding-bottom: 80px;
+  min-height: 120px;
+}
+
+.section-form.btn-black {
+  background: black;
+}
+
+.section-form .btn-shadow {
+  box-shadow: 0 10px 0 #484848;
+  border-radius: 10px;
+  padding: 10px 25px;
+  transition: all .5s;
+  margin-top: 30px;
+}
+ 
+.section-form .btn-shadow:hover {
+  box-shadow: 0 5px 0 #484848;
+  color: rgba(255, 255, 255, 0.884);
+}
+
+@media only screen and (max-width : 992px) {
+  .section-form {
+    padding: 50px 30px;
+  }
+}
+
+/* ============================section-footer================================= */
+
+.section-footer {
+  background: url(../AuthPage/world_map.png) center no-repeat;
+  background-size: cover;
+  background-color: #0c0c0c;
+  padding: 100px 0;
+}
+
+.section-footer h5 {
+  font-size: 25px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.section-footer ul {
+  list-style: none;
+  padding-left: 10px;
+}
+
+.section-footer ul a{
+  font-size: 17px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #fff;
+}
+
+.section-footer ul a:hover{
+  color: #f8e530;
+}
+
+.footer-images img {
+  border-radius: 10px;
+  border: 3px solid white;
+  margin-bottom: 20px;
+}
+
+.section-footer .progress-item {
+  padding-top: 20px;
+  padding-bottom: 5px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.section-footer .progress-item:hover{
+  background-color: rgba(255, 255, 255, 0.11);
+  border-radius: 10px;
+}
+
+.copyright {
+  background-color: #f8e530;
+  padding: 50px 0;
+  font-family: sans-serif;
+}
+
+.copyright a,
+.copyright span {
+  color: #171717;
+  font-size: 18px;
+  font-weight: 600;
+  position: relative;
+}
+
+.copyright .nav {
+  justify-content: center;
+}
+
+.copyright li a::after,
+.copyright li span::after {
+  content: '\00B7';
+  position: absolute;
+  right: -3px;
+}
+
+.copyright li:last-child a::after,
+.copyright li:last-child span::after {
+  content: '';
+}
+
+.copyright a:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width : 992px) {
+  .section-footer {
+    padding: 50px 0;
+  } 
+
+  .copyright{
+    padding: 20px 0;
+  } 
+}

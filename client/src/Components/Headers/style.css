@@ -1,0 +1,64 @@
+section {
+  padding: 100px 0;
+}
+
+.main-header img {
+  max-width: 100%;
+  height: auto;
+}
+
+.main-header .navbar-toggler {
+  color: white;
+  margin-right: 20px;
+  font-size: 25px;
+}
+
+.main-header {
+  background-color: black;
+}
+
+.navbar-position {
+  margin-left: auto;
+  padding-right: 50px;
+}
+
+.main-header .navbar-brand {
+  margin-left: 25px;
+}
+
+.main-header ul li a {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: fantasy;
+  font-size: 20px;
+  color: white;
+}
+
+.main-header ul li a::after {
+  content: '';
+  display: block;
+  width: 100%;
+  background-color: yellow;
+  height: 1px;
+  transform: scale(0);
+  transition: all .3s;
+}
+
+.main-header ul li a:hover {
+  color: yellow;
+}
+
+.main-header ul li a:hover::after {
+  transform: scale(1); 
+}
+
+
+@media only screen and (max-width : 992px) {
+
+  .navbar-nav {
+    background: black;
+    position: relative;
+    z-index: 1;
+    padding: 0 15px;
+  }
+}
