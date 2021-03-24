@@ -5,12 +5,21 @@ const mongoose = require('mongoose')
 
 const app = express()
 
-app.use(express.static("public"))
+app.use(express.json({ extended: true }))
 
 app.use('/api/auth', require('./routes/auth.routes'))
 app.use('/api/note', require('./routes/note.routes'))
 
 const PORT = config.get('port') || 5000
+
+//здесь наше приложение отдаёт статику
+app.use(express.static(__dirname));
+app.use(express.static(path.join(__dirname, 'build')));
+
+//обслуживание html
+app.get('/*', function (req, res) {
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+});
 
 async function start() {
   try {
