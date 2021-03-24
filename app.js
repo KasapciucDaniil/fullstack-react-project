@@ -12,15 +12,6 @@ app.use('/api/note', require('./routes/note.routes'))
 
 const PORT = config.get('port') || 5000
 
-//здесь наше приложение отдаёт статику
-app.use(express.static(__dirname));
-app.use(express.static(path.join(__dirname, 'build')));
-
-//обслуживание html
-app.get('/*', function (req, res) {
-  res.sendFile(path.join(__dirname, 'build', 'index.html'));
-});
-
 async function start() {
   try {
     await mongoose.connect(config.get('mongoUri'), {
@@ -33,6 +24,10 @@ async function start() {
     console.log('Server error', e.message)
     process.exit(1)
   } 
+}
+
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static('client/build'))
 }
 
 start()
