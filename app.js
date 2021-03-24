@@ -5,7 +5,7 @@ const mongoose = require('mongoose')
 
 const app = express()
 
-app.use(express.json({ extended: true }))
+app.use(express.static("public"))
 
 app.use('/api/auth', require('./routes/auth.routes'))
 app.use('/api/note', require('./routes/note.routes'))
@@ -24,10 +24,6 @@ async function start() {
     console.log('Server error', e.message)
     process.exit(1)
   } 
-}
-
-if (process.env.NODE_ENV === 'production') {
-  app.use(express.static('client/build'))
 }
 
 start()
