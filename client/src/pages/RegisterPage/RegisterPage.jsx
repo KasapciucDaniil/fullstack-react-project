@@ -81,7 +81,7 @@ export const RegisterPage = () => {
                         </div>
                         <input 
                           type="text" 
-                          className="form-control" 
+                          className="form-control"  
                           placeholder="Введите e-mail ..." 
                           aria-describedby="emailHelp" 
                           id="email"
@@ -98,7 +98,7 @@ export const RegisterPage = () => {
                               for="exampleInputEmail1" 
                               className="form-label"
                             >
-                             User Name
+                             User-Name
                             </label>
                             {errors.name && <div id="emailHelp" className="form-text text-validation">Enter correct User Name!</div>}
                         </div>
