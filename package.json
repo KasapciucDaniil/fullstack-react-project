@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Mern react",
   "main": "app.js",
-  "scripts": {
+  "react-scripts": {
     "start": "node app.js",
     "server": "nodemon app.js",
     "client": "npm run start --prefix client",
