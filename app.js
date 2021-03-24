@@ -10,16 +10,11 @@ app.use(express.json({ extended: true }))
 app.use('/api/auth', require('./routes/auth.routes'))
 app.use('/api/note', require('./routes/note.routes'))
 
+app.get('/', (req, res) => {
+  res.send('Hello to React API')
+})
+
 const PORT = config.get('port') || 5000
-
-//здесь наше приложение отдаёт статику
-app.use(express.static(__dirname));
-app.use(express.static(path.join(__dirname, 'build')));
-
-//обслуживание html
-app.get('/*', function (req, res) {
-  res.sendFile(path.join(__dirname, 'build', 'index.html'));
-});
 
 async function start() {
   try {
