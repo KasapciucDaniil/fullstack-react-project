@@ -58,6 +58,10 @@ export const UserPage = () => {
     toast.warning(<p><i style={{marginRight: '10px', fontSize: '25px'}}  className="fas fa-exclamation-triangle"></i>Some error occured, please try again, try to re-login to your account!</p>)
   }
 
+  const notifyPassword = () => {
+    toast.warning(<p><i style={{marginRight: '10px', fontSize: '25px'}}  className="fas fa-exclamation-triangle"></i>At the moment you cannot change the password, as this component is under development!</p>)
+  }
+
   const logoutHandler = async event => {
     event.preventDefault()
       auth.logout()
@@ -71,12 +75,7 @@ export const UserPage = () => {
   const passwordHandler = async event => {
     event.preventDefault()
     try {
-      const data = await request('/api/auth/changePassword', 'PATCH', {...form}, {
-        Authorization: `Bearer ${auth.token}`
-      })
-      fetchedName()
-
-      message(data.message)
+      notifyPassword()
     } catch(e) {}
   }
 
