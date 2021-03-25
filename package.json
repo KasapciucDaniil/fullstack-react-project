@@ -19,6 +19,7 @@
   "author": "Kasapciuc Daniil",
   "license": "ISC",
   "dependencies": {
+    "concurrently": "^5.3.0",
     "axios": "^0.21.1",
     "bcrypt": "^5.0.0",
     "bcryptjs": "^2.4.3",
@@ -41,7 +42,6 @@
     "swiper": "^6.4.5"
   },
   "devDependencies": {
-    "concurrently": "^5.3.0",
     "nodemon": "^2.0.6"
   }
 }
