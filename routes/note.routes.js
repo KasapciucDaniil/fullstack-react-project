@@ -22,7 +22,6 @@ router.post('/generate', auth, async (req, res) => {
     res.status(201).json({ note })
 
   } catch (e) {
-    console.log(e)
     res.status(500).json({ message: 'Что-то пошло не так, попробуйте снова!' })
   }
 })
@@ -32,7 +31,6 @@ router.delete('/deleteNote', auth, async (req,res) => {
     const note = await Note.deleteOne({_id: req.body._id})
     res.status(200).json(note)
   } catch (error) {
-    console.log(error)
   }
 })
 

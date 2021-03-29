@@ -63,7 +63,6 @@ export const NotesPage = () => {
       setTypes('')
       notify()
       fetchedNote()
-      console.log(data)
     } catch(e) {
       notifyWarning()
     }
