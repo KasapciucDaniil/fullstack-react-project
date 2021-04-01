@@ -24,7 +24,7 @@ export const NotesPage = () => {
   const [notes, setNotes] = useState([])
   const [title, setTitle] = useState('')
   const [text, setText] = useState('')
-  const [types, setTypes] = useState('')
+  const [types, setTypes] = useState('Note')
   const [search, setSearch] = useState('')
   const [pageNumber, setPageNumber] = useState(0)
 
@@ -106,7 +106,7 @@ export const NotesPage = () => {
   }).map(note => {
     return (
       <div className="col-lg-6 progress-item">
-        <div className="card">
+        <div key={note.id} className="card">
           <img src={notebook} className="card-img-top" alt="..." />
           <div className="card-body">
             <h2 className="card-title">{note.title}</h2>
@@ -183,18 +183,16 @@ export const NotesPage = () => {
                           </label>
                           {errors.types && <div id="emailHelp" className="form-text text-validation note-validation">Enter minimum 4 letters!</div>}
                       </div>
-                    <input 
+                    <select  
                       className="form-control" 
                       placeholder="News or Note..." 
-                      aria-label="Last name" 
+                      aria-label="Default select example"
                       name="types"
                       onChange={e => setTypes(e.target.value)}
-                      ref={register({
-                        required: true,
-                        minLength: 4,
-                        maxLength: 5
-                      })}
-                    />
+                    >
+                      <option selected>Note</option>
+                      <option>News</option>
+                    </select>
                   </div>
                 </div>
                 <div className="input-group message-group">
@@ -224,12 +222,7 @@ export const NotesPage = () => {
                   href 
                   className="btn btn-info btn-shadow mt-3"
                 >
-                  { 
-                    loading
-                    ? <div><span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-                    Loading...</div>
-                    : 'Create'
-                  }
+                  Create
               </button>
             </div>
            </form>

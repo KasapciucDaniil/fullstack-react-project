@@ -54,11 +54,9 @@ export const HomePage = () => {
   //   toast.warning(<p><i style={{marginRight: '10px', fontSize: '25px'}}  class="fas fa-exclamation-triangle"></i>An error occured, please try to re-login to your account!</p>)
   // }
 
-  // useEffect(() => {
-  //   if (!users.name) {
-  //     return notifyWarning()
-  //   }
-  // }, [])
+  // if (!users) {
+  //   return notifyWarning
+  // }
 
   if (loading) {
     return <Loader />

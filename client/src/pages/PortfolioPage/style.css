@@ -46,6 +46,8 @@
 }
 
 .portfolio-content {
+  background-color: rgba(0, 0, 0, 0.397);
+  border-radius: 8px;
   padding: 45px 50px;
   margin: auto;
 }
@@ -92,7 +94,6 @@
 }
 
 .project-content {
-  background-color: rgba(0, 0, 0, 0.397);
   border-radius: 7px;
 }
 

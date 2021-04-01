@@ -57,7 +57,7 @@ router.get('/info', auth ,async (req, res) => {
       name: user[0].name
     })
   } catch (e) {
-    console.log(e)
+    // console.log(e)
     res.status(500).json({ message: 'Что-то пошло не так, попробуйте снова!' })
   } 
 })
