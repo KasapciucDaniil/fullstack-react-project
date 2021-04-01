@@ -16,7 +16,6 @@ function App() {
   }
 
   return (
-    <AlertState>
       <div className="App">
         <AuthContext.Provider value={{
           token, login, logout, userId, isAuthenticated
@@ -26,7 +25,6 @@ function App() {
           </Router>
         </AuthContext.Provider>
       </div>
-    </AlertState>
   );
 }
 
