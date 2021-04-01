@@ -4,7 +4,6 @@ import { useRoutes } from './routes';
 import { useAuth } from './hooks/auth.hook';
 import { AuthContext } from './context/AuthContext';
 import { Loader } from './Components/Loader/Loader';
-import { AlertState } from './context/alert/AlertState';
 
 function App() {
   const {token, login, logout, userId, ready} = useAuth()
